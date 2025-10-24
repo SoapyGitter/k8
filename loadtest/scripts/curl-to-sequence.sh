@@ -44,7 +44,12 @@ if [[ ! -f "$input_file" ]]; then
   echo "Input file not found: $input_file" >&2; exit 1;
 fi
 
-python3 - "$input_file" "$output_file" <<'PY'
+# Pick python interpreter
+if command -v python3 >/dev/null 2>&1; then PYEXE=python3; 
+elif command -v python >/dev/null 2>&1; then PYEXE=python; 
+else echo "python3 or python not found in PATH" >&2; exit 1; fi
+
+"$PYEXE" - "$input_file" "$output_file" <<'PY'
 import json
 import re
 import sys
@@ -154,5 +159,9 @@ else:
 outp.write_text(json.dumps(base, ensure_ascii=False, indent=None), encoding='utf-8')
 print(f"Sequence written to {outp} (steps: {len(sequence)})")
 PY
+
+if [[ ! -f "$output_file" ]]; then
+  echo "Failed to create or update $output_file" >&2; exit 1;
+fi
 
 
