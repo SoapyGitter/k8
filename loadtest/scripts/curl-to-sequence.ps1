@@ -59,12 +59,25 @@ foreach ($p in $parts) {
   if ($cm.Success) { $cookie = ($cm.Groups['c'].Value -replace '\^"','"' -replace '\^%','%') }
   if ($cookie) { $headers['Cookie'] = $cookie }
 
-  # Body (--data-raw "...")
+  # Body: capture everything after data flags up to next option or end
   $body = $null
-  $b = [regex]::Match($p, '--data-raw\s*\^"(?<b>.*?)\^"', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-  if (-not $b.Success) { $b = [regex]::Match($p, '--data-raw\s*"(?<b>.*?)"', [System.Text.RegularExpressions.RegexOptions]::Singleline) }
+  $b = [regex]::Match($p, '(?ms)(?:--data(?:-raw|-binary|-urlencode)?|-d)\s+(?<b>.+?)(?=\s+-[A-Za-z-]+\b|$)')
   if ($b.Success) {
-    $body = ($b.Groups['b'].Value -replace '\^"','"' -replace '\^%','%')
+    $body = $b.Groups['b'].Value.Trim()
+    # Strip surrounding quotes if present (^"...^" or "...")
+    if ($body -match '^\^".*\^"$') { $body = $body.Substring(2, $body.Length-4) }
+    elseif ($body -match '^".*"$') { $body = $body.Substring(1, $body.Length-2) }
+    # Unescape common Windows caret-escapes
+    $body = $body `
+      -replace '\^"','"' `
+      -replace '\^\{','{' `
+      -replace '\^\}','}' `
+      -replace '\^%','%' `
+      -replace '\^\&','&' `
+      -replace '\^@','@' `
+      -replace '\^<','<' `
+      -replace '\^>','>' `
+      -replace '\^\^','^'
   }
 
   $sequence += [pscustomobject]@{

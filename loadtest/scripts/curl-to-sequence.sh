@@ -108,13 +108,28 @@ for p in parts:
     if cookie:
         headers['Cookie'] = cookie
 
-    # Body --data-raw
+    # Body: capture after data flags up to next option or end
     body = None
-    bm = re.search(r'--data-raw\s*\^"(?P<b>.*?)\^"', p, re.S)
-    if not bm:
-        bm = re.search(r'--data-raw\s*"(?P<b>.*?)"', p, re.S)
+    bm = re.search(r'(?:--data(?:-raw|-binary|-urlencode)?|-d)\s+(?P<b>.+?)(?=\s+-[A-Za-z-]+\b|$)', p, re.S | re.M)
     if bm:
-        body = bm.group('b').replace('\^"', '"').replace('\^%', '%')
+        bval = bm.group('b').strip()
+        # Strip surrounding quotes (^"...^" or "...")
+        if bval.startswith('^"') and bval.endswith('^"'):
+            bval = bval[2:-2]
+        elif bval.startswith('"') and bval.endswith('"'):
+            bval = bval[1:-1]
+        # Unescape caret-escaped characters
+        bval = (bval
+                .replace('^"', '"')
+                .replace('^{', '{')
+                .replace('^}', '}')
+                .replace('^%', '%')
+                .replace('^&', '&')
+                .replace('^@', '@')
+                .replace('^<', '<')
+                .replace('^>', '>')
+                .replace('^^', '^'))
+        body = bval
 
     sequence.append({
         'url': url,
