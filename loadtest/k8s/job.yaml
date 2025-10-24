@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: k6-loadtest
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: k6
+          image: grafana/k6:latest
+          imagePullPolicy: IfNotPresent
+          command: ["sh","-c","k6 run /scripts/test.js"]
+          env:
+            - name: BASE_URL
+              value: ""
+            - name: VUS
+              value: "10"
+            - name: DURATION
+              value: "30s"
+            - name: SLEEP
+              value: "1"
+            - name: ENDPOINTS_FILE
+              value: "/config/endpoints.json"
+            # Optionally set STAGES_JSON to use ramping stages instead of VUS/DURATION
+            # - name: STAGES_JSON
+            #   value: "[{\"duration\":\"30s\",\"target\":10}]"
+          volumeMounts:
+            - name: test-files
+              mountPath: /scripts/test.js
+              subPath: test.js
+            - name: test-files
+              mountPath: /config/endpoints.json
+              subPath: endpoints.json
+      volumes:
+        - name: test-files
+          configMap:
+            name: k6-test-files
+            items:
+              - key: test.js
+                path: test.js
+              - key: endpoints.json
+                path: endpoints.json
+
+
