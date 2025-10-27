@@ -42,11 +42,20 @@ function resolveUrl(step) {
     return `${baseUrl}${path}`;
 }
 
+function ensureHeadersObject(headers) {
+    const h = headers || {};
+    return h;
+}
+
 function toRequestBody(body, headers) {
     if (body === null || body === undefined) return null;
     if (typeof body === 'string') return body;
     const contentType = (headers && (headers['Content-Type'] || headers['content-type'])) || '';
-    if (contentType.includes('application/json')) {
+    if (contentType.includes('application/json') || !contentType) {
+        // Set default Content-Type to application/json when sending an object
+        if (!contentType) {
+            headers['Content-Type'] = 'application/json';
+        }
         return JSON.stringify(body);
     }
     return body;
@@ -69,10 +78,10 @@ export default function() {
         for (const step of sequence) {
             const method = (step.method || 'GET').toUpperCase();
             const url = resolveUrl(step);
-            const headers = step.headers || {};
+            const headers = ensureHeadersObject(step.headers);
             const body = toRequestBody(step.body, headers);
 
-            console.log(`Sending request to ${url} with method ${method} `);
+            console.log(`Sending request to ${url} with method ${method} and body ${body} and headers ${headers} `);
             const res = http.request(method, url, body, { headers });
             check(res, {
                 'status is OK-ish (2xx/3xx)': (r) => r.status >= 200 && r.status < 400,
@@ -93,7 +102,7 @@ export default function() {
 
     const method = (endpoint.method || 'GET').toUpperCase();
     const url = resolveUrl(endpoint);
-    const headers = endpoint.headers || {};
+    const headers = ensureHeadersObject(endpoint.headers);
     const body = toRequestBody(endpoint.body || null, headers);
     const expected = endpoint.expectStatus || 200;
 

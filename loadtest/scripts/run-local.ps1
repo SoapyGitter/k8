@@ -1,7 +1,7 @@
 param(
   [string]$BaseUrl = "",
-  [int]$Vus = 50,
-  [string]$Duration = "30s",
+  [int]$Vus = 20,
+  [string]$Duration = "120s",
   [string]$StagesJson = "",
   [double]$Sleep = 1,
   [string]$EndpointsFile = "",

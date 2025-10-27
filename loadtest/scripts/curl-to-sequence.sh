@@ -80,6 +80,14 @@ for p in parts:
     if not url:
         continue
 
+    # Sanitize caret-escaped chars in URL (e.g., %^20 -> %20)
+    url = (url
+           .replace('^&', '&')
+           .replace('^?', '?')
+           .replace('^=', '=')
+           .replace('^/', '/')
+           .replace('^', ''))
+
     # Filter base host (same as PS script)
     if not re.search(r'staging\.basuco\.eu', url):
         continue

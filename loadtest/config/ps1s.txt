@@ -1,0 +1,1658 @@
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auth/serviceauth" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auth/serviceauth"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "origin"="https://frontstaging.basuco.eu"
+  "password"="Bovbenthem-10"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "responsetype"="text"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "userid"="bovbenthem@gmail.com"
+} `
+-ContentType "application/json; charset=utf-8";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+$session.Cookies.Add((New-Object System.Net.Cookie("_dd_s", "logs=1&id=616e0859-cf1e-4612-8c6b-5bd59e774fe8&created=1761293263075&expire=1761295458889", "/", "frontstaging.basuco.eu")))
+Invoke-WebRequest -UseBasicParsing -Uri "https://frontstaging.basuco.eu/assets/i18n/de.json" `
+-WebSession $session `
+-Headers @{
+"authority"="frontstaging.basuco.eu"
+  "method"="GET"
+  "path"="/assets/i18n/de.json"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-origin"
+} `
+-ContentType "application/json; charset=utf-8";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/companies/fe672f0e-7d57-4939-8adb-541f67ab7c4c/tenants/ibaMsd" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/companies/fe672f0e-7d57-4939-8adb-541f67ab7c4c/tenants/ibaMsd"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/hexonAuctioneers/fe672f0e-7d57-4939-8adb-541f67ab7c4c" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/hexonAuctioneers/fe672f0e-7d57-4939-8adb-541f67ab7c4c"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/catalogs/GetUserCatalogs/false/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/catalogs/GetUserCatalogs/false/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"make`":[],`"model`":[],`"fuel`":[],`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"excluded`":null,`"included`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"search`":null,`"catalogName`":null,`"stockVehicle`":null,`"catalogType`":null,`"sorting`":null,`"advertised`":null,`"blocked`":null,`"teams`":null,`"isReady`":null,`"home`":null,`"stockDaysFrom`":null,`"stockDaysTo`":null}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/GetCompaniesWhoMadeBids/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/all/GetCompaniesWhoMadeBids/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/catalogs/GetUserCatalogs/false/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/catalogs/GetUserCatalogs/false/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/vehicleMerks" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/vehicleMerks"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"make`":[],`"model`":[],`"fuel`":[],`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"excluded`":null,`"included`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"search`":null,`"catalogName`":null,`"stockVehicle`":null,`"catalogType`":null,`"sorting`":null,`"advertised`":null,`"blocked`":null,`"teams`":null,`"isReady`":null,`"home`":null,`"stockDaysFrom`":null,`"stockDaysTo`":null}}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"make`":[],`"model`":[],`"fuel`":[],`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"excluded`":null,`"included`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"search`":null,`"catalogName`":null,`"stockVehicle`":null,`"catalogType`":null,`"sorting`":null,`"advertised`":null,`"blocked`":null,`"teams`":null,`"isReady`":null,`"home`":null,`"stockDaysFrom`":null,`"stockDaysTo`":null}}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/catalogs/GetUserCatalogs/true/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/catalogs/GetUserCatalogs/true/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:19+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:25+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":5,`"page`":0,`"count`":15,`"filter`":{`"make`":[],`"model`":[],`"fuel`":[],`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"excluded`":null,`"included`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"search`":null,`"catalogName`":null,`"stockVehicle`":null,`"catalogType`":null,`"sorting`":null,`"advertised`":null,`"blocked`":null,`"teams`":null,`"isReady`":null,`"home`":null,`"stockDaysFrom`":null,`"stockDaysTo`":null}}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:26+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"make`":[],`"model`":[],`"fuel`":[],`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"excluded`":null,`"included`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"search`":null,`"catalogName`":null,`"stockVehicle`":null,`"catalogType`":null,`"sorting`":null,`"advertised`":null,`"blocked`":null,`"teams`":null,`"isReady`":null,`"home`":null,`"stockDaysFrom`":null,`"stockDaysTo`":null}}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/GetLotsCountByStatus"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:30+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/all/seller/lotsByStatuses"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:30+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]}}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/28623e46-391b-4482-aa0e-621224689630/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/28623e46-391b-4482-aa0e-621224689630/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/28623e46-391b-4482-aa0e-621224689630/false" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/28623e46-391b-4482-aa0e-621224689630/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]},`"isBuyer`":false}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/b0c8cacc-17c5-49a1-af59-d03f10829bd0/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/b0c8cacc-17c5-49a1-af59-d03f10829bd0/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/b0c8cacc-17c5-49a1-af59-d03f10829bd0/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/b0c8cacc-17c5-49a1-af59-d03f10829bd0/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Picanto/Kia" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Picanto/Kia"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Picanto/Kia" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Picanto/Kia"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:32+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/704c9c3a-b360-4a10-b52e-ce7c4aa8499a/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/704c9c3a-b360-4a10-b52e-ce7c4aa8499a/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:33+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/704c9c3a-b360-4a10-b52e-ce7c4aa8499a/false" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/704c9c3a-b360-4a10-b52e-ce7c4aa8499a/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:33+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]},`"isBuyer`":false}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/ca69187a-b186-4803-a6bd-4924240f77c6/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/ca69187a-b186-4803-a6bd-4924240f77c6/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/ca69187a-b186-4803-a6bd-4924240f77c6/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/ca69187a-b186-4803-a6bd-4924240f77c6/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/H2/Hummer" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/H2/Hummer"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/H2/Hummer" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/H2/Hummer"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/c5d8ebbe-1118-460b-9eec-53b28b96f966/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/c5d8ebbe-1118-460b-9eec-53b28b96f966/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/c5d8ebbe-1118-460b-9eec-53b28b96f966/false" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/c5d8ebbe-1118-460b-9eec-53b28b96f966/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:34+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]},`"isBuyer`":false}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:35+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:35+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/107/Peugeot" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/107/Peugeot"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:35+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/107/Peugeot" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/107/Peugeot"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:35+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/create" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/bids/create"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"lotID`":`"c5d8ebbe-1118-460b-9eec-53b28b96f966`",`"status`":`"Made`",`"catalogID`":`"45d8b76b-018d-4bea-8dbf-3a1c66fcc529`",`"buyer`":{`"emailAddress`":`"bovbenthem@gmail.com`",`"address`":{},`"invoiceInfo`":{},`"person`":{},`"phoneNumber`":`"`",`"externalCompanyID`":null,`"externalCompanyName`":null,`"internalCompanyID`":null,`"internalCompanyName`":null,`"internalTenantID`":null},`"amount`":12000,`"type`":`"Normal`",`"extensionStatus`":`"None`",`"remarks`":`"`",`"counterBidCompanyId`":null}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/c5d8ebbe-1118-460b-9eec-53b28b96f966/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/c5d8ebbe-1118-460b-9eec-53b28b96f966/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/9b3a0346-cd09-4771-9d5d-4b6177e3bbcb/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/107/Peugeot" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/107/Peugeot"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/107/Peugeot" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/107/Peugeot"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:37+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/lots/vehicle/getNextAndPreviousCars/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"statusId`":16,`"page`":0,`"count`":15,`"filter`":{`"blocked`":null,`"isReady`":null,`"teams`":null,`"year`":{`"from`":null,`"to`":null},`"milage`":{`"from`":null,`"to`":null},`"vat`":{`"included`":null,`"excluded`":null},`"seller`":[],`"source`":[],`"transmissionTypes`":[],`"vehicleTypes`":[],`"expextedDeliveryDate`":{`"from`":null,`"to`":null},`"startingDate`":{`"from`":null,`"to`":null},`"home`":null,`"make`":[],`"catalogName`":null,`"catalogType`":null,`"stockVehicle`":true,`"fuel`":[],`"stockDaysFrom`":null,`"stockDaysTo`":null,`"advertised`":null,`"model`":[]},`"isBuyer`":false}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:39+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/create" `
+-Method "POST" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="POST"
+  "path"="/api/v1/auctions/bids/create"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json" `
+-Body "{`"lotID`":`"8f382d6a-898b-42cf-bb52-7af9c56aeaaa`",`"status`":`"Made`",`"catalogID`":`"45d8b76b-018d-4bea-8dbf-3a1c66fcc529`",`"buyer`":{`"emailAddress`":`"bovbenthem@gmail.com`",`"address`":{},`"invoiceInfo`":{},`"person`":{},`"phoneNumber`":`"`",`"externalCompanyID`":null,`"externalCompanyName`":null,`"internalCompanyID`":null,`"internalCompanyName`":null,`"internalTenantID`":null},`"amount`":53200,`"type`":`"Normal`",`"extensionStatus`":`"None`",`"remarks`":`"`",`"counterBidCompanyId`":null}";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/commercialPage/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/commercialPage/8f382d6a-898b-42cf-bb52-7af9c56aeaaa/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/false" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/false"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/true" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/bids/GetPriceType/415b2124-ee13-47a6-834e-b82c66d34f3e/true"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json";
+$session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
+$session.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36"
+Invoke-WebRequest -UseBasicParsing -Uri "https://staging.basuco.eu/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel" `
+-WebSession $session `
+-Headers @{
+"authority"="staging.basuco.eu"
+  "method"="GET"
+  "path"="/api/v1/auctions/lots/vehicle/Astra%20Sports%20Tourer/Opel"
+  "scheme"="https"
+  "accept"="application/json"
+  "accept-encoding"="gzip, deflate, br, zstd"
+  "accept-language"="en-US,en;q=0.9,ru-RU;q=0.8,ru;q=0.7"
+  "access-control-allow-credentials"="true"
+  "access-control-allow-headers"="Accept,Accept-Language,Content-Language,Content-Type,x-requested-width"
+  "access-control-allow-methods"="GET, PUT, POST, OPTIONS, DELETE"
+  "access-control-allow-origin"="*"
+  "access-control-expose-headers"="Content-Length,Content-Range"
+  "authorization"="Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZDU0ODk2OC1mNjU4LTRlMTMtYmZkNS05YjJjNGY3ZDlhZWQiLCJuYW1laWQiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsInN1YiI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSI6ImJvdmJlbnRoZW1AZ21haWwuY29tIiwiZW1haWwiOiJib3ZiZW50aGVtQGdtYWlsLmNvbSIsImlzcyI6InN0YWdpbmcuYmFzdWNvLmV1IiwiYXVkIjoic3RhZ2luZy5iYXN1Y28uZXUiLCJDb21wYW55SUQiOiJmZTY3MmYwZS03ZDU3LTQ5MzktOGFkYi01NDFmNjdhYjdjNGMiLCJDb21wYW55TmFtZSI6IkJsZWVrZXIgJiBkZSBKb25nIEJWIiwiYXpwIjoiIiwiZXhwIjoxNzYzODkwMDI3fQ.xE4h9dtweugleLX_XMr_UR9rhHX266ZzM0-vkPGoIQI"
+  "origin"="https://frontstaging.basuco.eu"
+  "priority"="u=1, i"
+  "referer"="https://frontstaging.basuco.eu/"
+  "request-date"="2025-10-24T12:29:41+04:00"
+  "sec-ch-ua"="`"Google Chrome`";v=`"141`", `"Not?A_Brand`";v=`"8`", `"Chromium`";v=`"141`""
+  "sec-ch-ua-mobile"="?0"
+  "sec-ch-ua-platform"="`"Windows`""
+  "sec-fetch-dest"="empty"
+  "sec-fetch-mode"="cors"
+  "sec-fetch-site"="same-site"
+  "tenantid"="ibaMsd"
+} `
+-ContentType "application/json"
